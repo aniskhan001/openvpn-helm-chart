@@ -7,8 +7,8 @@ The primary purpose of this chart was to make it easy to access kubernetes servi
 ## Usage
 
 ```bash
-helm repo add stable http://storage.googleapis.com/kubernetes-charts
-helm install stable/openvpn
+helm repo add aniskhan001 https://raw.githubusercontent.com/aniskhan001/openvpn-helm-chart/master
+helm install -n openvpn aniskhan001/openvpn-internet --namespace openvpn
 ```
 
 Wait for the external load balancer IP to become available.  Check service status via: `kubectl get svc`
