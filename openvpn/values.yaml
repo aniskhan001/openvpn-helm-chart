@@ -82,6 +82,10 @@ openvpn:
   # Redirect all client traffic through VPN
   redirectGateway: true
   # Arbitrary lines appended to the end of the server configuration file
-  # conf: |
-  #  max-clients 100
-  #  client-to-client
+  conf: |
+    # Clients are to use this server as a network gateway.
+    push "redirect-gateway def1 bypass-dhcp"
+
+    # Push these DNS addresses to clients.
+    push "dhcp-option DNS 208.67.222.222"
+    push "dhcp-option DNS 208.67.220.220"
