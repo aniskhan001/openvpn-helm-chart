@@ -1,0 +1,27 @@
+apiVersion: v1
+entries:
+  openvpn-internet:
+  - apiVersion: v1
+    appVersion: 1.1.0
+    created: 2019-02-17T01:52:26.454664+06:00
+    description: A Helm chart to install an openvpn server inside a kubernetes cluster.
+      Certificate generation is also part of the deployment, and this chart will generate
+      client keys as needed.
+    digest: ad044b3ce6734d9db909c1d8b3a2e26768d392f2bf2a1c719279767c1ba52e22
+    home: https://openvpn.net/index.php/open-source.html
+    icon: https://forums.openvpn.net/styles/openvpn/theme/images/ovpnlogo.png
+    keywords:
+    - openvpn
+    - vpn
+    - tunnel
+    - network
+    - service
+    - connectivity
+    - encryption
+    name: openvpn-internet
+    sources:
+    - https://github.com/aniskhan001/openvpn-helm-chart
+    urls:
+    - openvpn-internet-3.11.0.tgz
+    version: 3.11.0
+generated: 2019-02-17T01:52:26.453553+06:00
